@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@drawable/background_cards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/tv_payment_methods"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:fontFamily="@font/circular_std_bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Tus medios de pagos" />
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/tv_text_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_payment_methods"
+            android:layout_below="@+id/pager"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/circular_std_book"
+            android:textSize="16sp" />
+
+        <com.cencosud.scanandgo.wallet.utils.WrapContentViewPager
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_payment_methods"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabDots"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_text_info"
+            app:tabBackground="@drawable/tab_selector_cards"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAddCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#85a61e"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_add" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/layoutProgress"
+                layout="@layout/view_progress"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/ll_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_add_payment_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/img_add_payment_method" />
+
+                <TextView
+                    android:id="@+id/tv_add_payment_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:text="@string/tv_text_add_payment_method"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_payment_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:text="@string/tv_text_add_card_credit"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="8dp" />
+
+    </RelativeLayout>
+</layout>

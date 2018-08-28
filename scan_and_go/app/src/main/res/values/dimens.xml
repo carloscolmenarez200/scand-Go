@@ -1,0 +1,27 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <fraction name="logo">3%</fraction>
+    <fraction name="tv_small">10%</fraction>
+    <fraction name="edt">2%</fraction>
+    <fraction name="btn_login">3%</fraction>
+    <fraction name="tv_forgot">5%</fraction>
+    <fraction name="tv_register">5%</fraction>
+    <fraction name="btn_register">2%</fraction>
+    <fraction name="tv_terms">2%</fraction>
+
+    <dimen name="tv_login_register_title_selected">45sp</dimen>
+    <dimen name="tv_login_register_title_unselected">32sp</dimen>
+
+    <!--car-->
+    <dimen name="height_item_car">100dp</dimen>
+    <dimen name="margin_item_car">15dp</dimen>
+    <dimen name="marginTop_item_car">15dp</dimen>
+    <dimen name="btn_picker_width">40dp</dimen>
+    <dimen name="btn_picker_height">40dp</dimen>
+    <dimen name="btn_pay_width">140dp</dimen>
+    <dimen name="btn_pay_height">50dp</dimen>
+    <dimen name="text_items">17sp</dimen>
+
+
+
+</resources>

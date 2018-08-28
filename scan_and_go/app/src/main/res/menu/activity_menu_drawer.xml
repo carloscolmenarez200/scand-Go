@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_scanner"
+            android:icon="@drawable/icon_scan_menu"
+            android:title="@string/menu_scanner" />
+       <item
+            android:id="@+id/nav_shopping_list"
+            android:icon="@drawable/icon_my_list"
+            android:title="@string/menu_shopping_list" />
+        <item
+            android:id="@+id/nav_my_cards"
+            android:icon="@drawable/icn_card_menu"
+            android:title="@string/menu_my_cards" />
+        <item
+           android:id="@+id/nav_shopping_history"
+           android:icon="@drawable/icon_history_menu"
+           android:title="@string/menu_shopping_history" />
+        <item
+            android:id="@+id/nav_stores"
+            android:icon="@drawable/icon_locale_menu"
+            android:title="@string/menu_stores" />
+        <item
+            android:id="@+id/nav_terms_and_conditions"
+            android:icon="@drawable/icon_terms_and_conditions_menu"
+            android:title="@string/menu_terms_and_conditions" />
+        <item
+            android:id="@+id/nav_tutorial"
+            android:icon="@drawable/icon_tutorial_menu"
+            android:title="@string/menu_tutorial" />
+        <item
+            android:id="@+id/nav_email"
+            android:icon="@drawable/icon_email_menu"
+            android:title="@string/menu_email" />
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/icon_call_menu"
+            android:title="@string/menu_call" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/icon_close_sesion_menu"
+            android:title="@string/menu_log_out" />
+    </group>
+ </menu>

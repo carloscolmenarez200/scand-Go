@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- white -->
+    <item android:drawable="@drawable/shape_button_pressed" android:state_pressed="true" />
+
+    <!-- white -->
+    <item android:drawable="@drawable/shape_button_disabled" android:state_enabled="false" />
+
+    <!-- white -->
+    <item android:drawable="@drawable/shape_button_active" android:state_enabled="true" />
+
+
+</selector>

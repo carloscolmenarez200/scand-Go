@@ -1,0 +1,4 @@
+include ':app'
+include ':scan_commons'
+include ':cenco-core'
+project(':cenco-core').projectDir = new File(settingsDir, '../core_sag/cenco-core')

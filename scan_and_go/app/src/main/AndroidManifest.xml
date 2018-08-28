@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cencosud.scanandgo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".ScanApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".splash.presentation.activity.SplashActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".login_register.presentation.activity.LoginRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginRegisterTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".login_register.presentation.activity.RegisterTokenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginRegisterTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".terms_and_conditions.presentation.activity.TermsAndConditionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TermsAndConditionsTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".onboarding.presentation.activity.OnBoardingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OnboardingActivityTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".menu.presentation.activity.DrawerMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DrawerMenuTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".wallet.presentation.activity.WalletActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".car.presentation.activity.CarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CarTheme" />
+        <activity
+            android:name=".profile.presentation.activity.ProfileActivity"
+            android:parentActivityName=".login_register.presentation.activity.LoginRegisterActivity"
+            android:theme="@style/Profile">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login_register.presentation.activity.LoginRegisterActivity" />
+        </activity>
+        <activity
+            android:name=".checkout.presentation.activity.CheckoutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CheckoutTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".qr.presentation.activity.QrActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QrTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".nps.presentation.activity.NpsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NpsTheme"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="427fb993dfdb8b071539fbd3ff317a38f09ced65" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDTf_d-vIh-9cLVr_09xXr73UbbEXtVhrg" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".recover_password.presentation.activity.RecoverPasswordActivity"
+            android:theme="@style/RecoverPasswordTheme" />
+        <activity android:name=".store.presentation.activity.StoreActivity" />
+
+        <activity android:name=".help_center.presentation.activity.HelpCenterActivity" />
+    </application>
+
+</manifest>

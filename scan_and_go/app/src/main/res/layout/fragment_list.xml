@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:visibility="gone"
+                android:clickable="true"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="20dp">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/name_store"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="65"
+                            android:layout_marginStart="17dp"
+                            android:fontFamily="@font/circular_std_bold"
+                            android:text="Jumbo Kennedy"
+                            android:maxLines="2"
+                            android:textColor="@color/colorPrimarytext"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="35"
+                            android:orientation="horizontal"
+                            android:gravity="end|center"
+                            android:layout_marginEnd="17dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_map" />
+
+                            <TextView
+                                android:id="@+id/tv_km"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="19489,9 km"
+                                android:textColor="@color/colorPrimarytext"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_nearest_store"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/circular_std_book"
+                        android:text="@string/text_nearest_store"
+                        android:textColor="@color/colorPrimarytext"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_address_store"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/circular_std_book"
+                        android:text="Avenida Presidente Kennedy 9001"
+                        android:textSize="14sp"
+                        android:ellipsize="end"
+                        android:maxLines="3"/>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:id="@+id/tv_how_to_get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/circular_std_book"
+                        android:text="COMO LLEGAR"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_store_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:paddingTop="120dp"
+            android:visibility="invisible"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btn_maps"
+                    android:layout_width="150dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/selector_button_maps"
+                    android:checked="true"
+                    android:fontFamily="@font/circular_std_book"
+                    android:textColor="@drawable/selector_text_color_locale"
+                    android:textOff="Mapa"
+                    android:textOn="Mapa" />
+
+                <ToggleButton
+                    android:id="@+id/btn_list"
+                    android:layout_width="150dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/selector_button_maps"
+                    android:checked="false"
+                    android:fontFamily="@font/circular_std_book"
+                    android:text="Tiendas"
+                    android:textColor="@drawable/selector_text_color_locale"
+                    android:textOff="Tiendas"
+                    android:textOn="Tiendas" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/progress"
+            layout="@layout/view_progress"
+            android:visibility="gone" />
+    </FrameLayout>
+</layout>

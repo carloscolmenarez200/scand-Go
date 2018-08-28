@@ -1,0 +1,56 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/rl_menu_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/view_terms_and_conditions"
+                    layout="@layout/view_terms_and_conditions" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/fl_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center|bottom"
+            android:alpha="0.9"
+            android:background="@drawable/gradient_opacity" />
+
+        <Button
+            android:id="@+id/btn_understood"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_active_terms"
+            android:text="@string/btn_terms_and_conditions"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_items"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </FrameLayout>
+
+</layout>

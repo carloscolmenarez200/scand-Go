@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Style General-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialogTerms" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_terms_and_conditions_background</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Style Login and Register-->
+    <style name="LoginRegisterTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/colorDivider</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+
+    <!-- Style Login and Register-->
+    <style name="RutDialog" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">#9b9b9b</item>
+        <item name="colorControlHighlight">#9b9b9b</item>
+        <item name="colorControlNormal">#9b9b9b</item>
+    </style>
+
+
+    <!-- Style Drawer Menu-->
+    <style name="DrawerMenuTheme" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorDivider</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Style Car-->
+    <style name="CarTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/scanner_status_bar</item>
+        <item name="colorPrimary">@color/scanner_status_bar</item>
+    </style>
+
+    <!-- Style Checkout activity-->
+    <style name="CheckoutActivityTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/orange_pressed</item>
+        <item name="colorPrimaryDark">@color/orange_pressed</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Style Dialog Checkout-->
+    <style name="CheckoutTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/orange_pressed</item>
+        <item name="colorPrimaryDark">@color/orange_pressed</item>
+        <item name="colorControlActivated">#9b9b9b</item>
+        <item name="colorControlHighlight">#9b9b9b</item>
+        <item name="colorControlNormal">#9b9b9b</item>
+    </style>
+
+    <!--Style Onboarding-->
+    <style name="OnboardingActivityTheme" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorDivider</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--StQrActivitye qr-->
+    <style name="QrTheme" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">#34ae7d</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FabStyle">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:src">@drawable/ic_button_edit</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+    <!--NpsStyle-->
+    <style name="MyRatingBarTwo" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/start_nps</item>
+        <item name="colorControlActivated">@color/color_text_nps</item>
+        <item name="android:minHeight">42dp</item>
+        <item name="android:maxHeight">42dp</item>
+    </style>
+
+    <!--NpsActivity-->
+    <style name="NpsTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/color_text_nps</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <!--Contacts-->
+    <style name="ContactsTheme">
+            <item name="android:textSize">11sp</item><!-- text size in menu-->
+    </style>
+
+    <!--RecoverPassword-->
+    <style name="RecoverPasswordTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/colorDivider</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <!--TermsAndConditions-->
+    <style name="TermsAndConditionsTheme" parent="AppTheme">
+        <item name="colorControlActivated">@color/colorDivider</item>
+        <item name="colorPrimaryDark">@color/colorDivider</item>
+    </style>
+
+    <!--Profile-->
+    <style name="Profile" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/colorDivider</item>
+
+    </style>
+
+    <!--Shopping List-->
+    <style name="ShoppingList" parent="AppTheme">
+        <item name="colorControlActivated">@color/colorDivider</item>
+
+    </style>
+
+    <style name="style_register_checks">
+        <item name="android:fontFamily">@font/circular_std_book</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="style_login_text_input_layout" parent="AppTheme">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:fontFamily">@font/circular_std_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="style_login_text_input_edit_text" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">@font/circular_std_bold</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="PagerTabStripText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="condensed_regular">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="roboto_light">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="roboto_regular">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="roboto_regular_white">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="roboto_medium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="roboto_bold">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

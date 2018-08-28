@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/backBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_background_card_back"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_card_back" />
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="330dp"
+        android:layout_height="192dp"
+        android:background="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSetAsDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_card_payment_back"
+                android:fontFamily="@font/circular_std_bold"
+                android:paddingLeft="44dp"
+                android:paddingRight="44dp"
+                android:text="@string/set_as_defautlt"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_delete_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/circular_std_bold"
+                android:paddingLeft="44dp"
+                android:paddingRight="44dp"
+                android:text="@string/delete_card"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </FrameLayout>
+    </FrameLayout>
+</layout>

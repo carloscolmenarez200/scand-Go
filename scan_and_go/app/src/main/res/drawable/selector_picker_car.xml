@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- white -->
+    <item android:drawable="@drawable/button_picker_decrement"  android:state_enabled="false" />
+
+    <!-- white -->
+    <item android:drawable="@drawable/button_picker_increase" android:state_enabled="true" />
+
+
+</selector>

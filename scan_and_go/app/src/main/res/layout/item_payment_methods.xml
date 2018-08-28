@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.cencosud.scanandgo.wallet.presentation.widget.FlipView
+            android:id="@+id/flipView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flipDuration="400"
+            app:flipEnabled="true"
+            app:flipType="horizontal">
+
+            <!-- Back Layout Goes Here -->
+            <include
+                android:id="@+id/back"
+                layout="@layout/card_payment_back" />
+
+            <!-- Front Layout Goes Here -->
+            <include
+                android:id="@+id/front"
+                layout="@layout/card_payment_methods_from" />
+
+        </com.cencosud.scanandgo.wallet.presentation.widget.FlipView>
+    </FrameLayout>
+</layout>

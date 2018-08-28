@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_splash"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gradient_splash" />
+
+        <ImageView
+            android:id="@+id/iv_splash_jumbo_logo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="44dp"
+            android:layout_marginStart="44dp"
+            android:src="@drawable/img_logo_splash" />
+
+        <TextView
+            android:id="@+id/tv_splash_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/circular_std_book"
+            android:layout_marginBottom="39dp"
+            android:gravity="center_horizontal"
+            android:letterSpacing="-0.04"
+            android:text="@string/tv_splash_text"
+            android:textColor="#75ffffff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+</layout>
